@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.custom.i18n.resources" value="global" />
+	<package name="default" extends="struts-default">
+
+		<action name="login" class="com.itemcodemapping.actions.Login">
+			<result name="success">DashBoard.jsp</result>
+			<result name="failure">LoginFailure.jsp</result>
+		</action>
+		<action name="recordinsertion" class="com.itemcodemapping.actions.Record">
+			<result name="success">DashBoard.jsp</result>
+		</action>
+		<action name="exportData" class="com.itemcodemapping.actions.ExportData"></action>
+		<action name="redirectAction" class="com.itemcodemapping.actions.RedirectAction">
+			<result name="success">DashBoard.jsp</result>
+		</action>
+	</package>
+</struts>    
